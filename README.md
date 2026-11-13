@@ -1,44 +1,26 @@
-# LUMORA — Interactive Photography Portfolio
+# Voyara Travel Website
 
-A professional multi-page photography portfolio created for the Interactive Web Portfolio Project.
+## Run the website
+1. Extract `voyara_working_website.zip`.
+2. Open the extracted folder in Visual Studio Code.
+3. Install/use the **Live Server** extension.
+4. Right-click `index.html` and choose **Open with Live Server**.
+5. The site opens in your browser. Use the navigation to visit Destinations and Contact.
 
-## Pages
-- `index.html` — Home / studio introduction / services
-- `portfolio.html` — dynamically rendered portfolio with category filters and image lightbox
-- `contact.html` — contact form with client-side validation
+A local web server is recommended because the Destinations page loads `data/portfolio.json` using JavaScript `fetch()`.
 
-## Technologies demonstrated
-- HTML5 semantic structure (`header`, `nav`, `main`, `section`, `article`, `footer`, `form`)
-- CSS responsive design using Grid and Flexbox
-- Custom typography, spacing, transitions and hover effects
-- CSS animation/reveal effects
-- JavaScript mobile navigation
-- JavaScript dark-mode toggle
-- JavaScript form validation and error handling
-- Dynamic portfolio content loaded from `data/portfolio.json`
-- Interactive image lightbox
-- Portfolio category filtering
-- Responsive mobile/tablet/desktop layouts
+## Included features
+- Responsive Home, Destinations and Contact pages.
+- Destination cards and category filters.
+- Click a destination image to open the lightbox; close with X, outside click or Escape.
+- Mobile navigation menu.
+- Contact form validation. On submit it opens a pre-filled email draft.
 
-## How to run
-For the best local result, open the project using VS Code + Live Server (or another local web server). The portfolio JSON is loaded dynamically, so a local server is recommended instead of opening `portfolio.html` directly with `file://`.
+## Important before publishing
+- Replace `hello@voyaratravel.com` in `contact.html` and `js/script.js` with your actual business email.
+- The contact form uses `mailto:`. It does not save enquiries to a database. For online form submissions without an email app, connect a form service or backend.
+- Photos and Google Fonts load from the internet.
+- Voyara is a sample brand name; check trademark/domain availability before commercial use.
 
-## Group contribution idea
-1. Project Manager — coordinates tasks and deadlines.
-2. HTML Lead — semantic page structure.
-3. CSS Layout Designer — responsive layout.
-4. CSS Styling Designer — theme, typography and visual system.
-5. JavaScript Functionality Developer — interactive features.
-6. JavaScript Validation Developer — form validation and error handling.
-7. Content Manager — text, images and portfolio data.
-8. Testing & Documentation Lead — browser testing and README.
-
-## Presentation points
-During the 10-minute presentation, demonstrate:
-1. Responsive navigation on mobile.
-2. Portfolio category filters.
-3. Image lightbox.
-4. Dark-mode toggle.
-5. Contact form validation.
-6. Dynamic JSON portfolio rendering.
-7. Responsive layout by resizing the browser.
+## Publish and get a public website link
+You need a hosting service. A simple option is Netlify: create/sign in to a Netlify account, choose Add new site / Deploy manually, and drag the extracted website folder (the folder containing `index.html`) into the upload area. Netlify will provide a public URL. This project itself does not include a hosted public URL yet.
