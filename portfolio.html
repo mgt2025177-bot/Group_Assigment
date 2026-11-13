@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the LUMORA photography portfolio.">
+  <title>Portfolio — LUMORA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>LUMORA</span><small>VISUAL STORIES</small></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a class="active" href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-label">PORTFOLIO / 2026</div>
+      <h1>A collection of<br><em>visual stories.</em></h1>
+      <p>Portraits, places, celebrations and brands — photographed with a quiet, editorial point of view.</p>
+    </section>
+
+    <section class="portfolio-section section">
+      <div class="filter-bar reveal">
+        <button class="filter active" data-filter="all">All work</button>
+        <button class="filter" data-filter="portrait">Portrait</button>
+        <button class="filter" data-filter="travel">Travel</button>
+        <button class="filter" data-filter="wedding">Weddings</button>
+        <button class="filter" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <footer class="footer">
+    <div><a class="brand footer-brand" href="index.html"><span>LUMORA</span><small>VISUAL STORIES</small></a><p>Photography with intention.</p></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="contact.html">Contact</a></div>
+    <small>© 2026 LUMORA Studio</small>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
